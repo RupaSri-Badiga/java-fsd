@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<div align="center">
+<form:form action="addProduct" method="post"
+modelAttribute="product">
+<form:label path="name">Product name:</form:label>
+<form:input path="name" />
+<br />
+<form:label path="price">Product Price:</form:label>
+<form:input path="price" />
+<br />
+<form:label path="date_added">Product Date Added:</form:label>
+<input name="date_added" type="date" />
+<br />
+<form:button>Add Product</form:button>
+</form:form>
+<br>
+<br> 
+<a href="/"> Back to HOME</a>
