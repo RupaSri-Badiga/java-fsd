@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ming’s Diner.</title>
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Add custom CSS for styling -->
+    <style>
+        body
+        {
+            background-color:rgba(117, 36, 36, 0.289);
+        }
+        .jumbotron {
+            background-image: url('https://media.istockphoto.com/id/1457979959/photo/snack-junk-fast-food-on-table-in-restaurant-soup-sauce-ornament-grill-hamburger-french-fries.jpg?s=2048x2048&w=is&k=20&c=_AdAtGBXgtZjfJQVbDYS6Eku8m3h05p2E2p0V1uKlUo=');
+            background-size: cover;
+            color:white;
+            text-align: center;
+            padding: 100px 0;
+            font-weight: bolder;
+        }
+
+        .grid-img {
+            margin-bottom: 20px;
+        }
+        .carousel-inner .carousel-item img{
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg  bg-light ">
+        <a class="navbar-brand" href="#">Ming’s Diner.</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#menu">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100 " src="https://cdn.pixabay.com/photo/2016/11/18/14/05/brick-wall-1834784_1280.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2014/09/17/20/26/restaurant-449952_1280.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2022/11/14/10/37/chinese-lanterns-7591296_1280.jpg" alt="Third slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <hr>
+    <!-- Landing Page with Call to Action (CTA) Button -->
+    <div class="jumbotron">
+        <h1 class="display-4">Welcome to Ming’s Diner.</h1>
+        <p class="lead">Discover a world of flavors</p>
+        <a class="btn btn-primary btn-lg" href="#menu" role="button">Explore Menu</a>
+    </div>
+
+    <!-- Grid Section (Sample Grid) -->
+    <section id="menu">
+        <div class="container bg-info">
+            <br>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="https://www.chefspencil.com/wp-content/uploads/Chilaquiles-960x960.jpg.webp" alt="Chilaquiles" class="img-fluid grid-img">
+                    <h2>Chilaquiles</h2>
+                    <p>Made of triangular pieces of fried or toasted corn tortilla, called totopos, soaked in a red or green hot sauce, they are topped with either shredded chicken, chorizo, shredded beef, and scrambled eggs or a sunny side-up egg.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://www.chefspencil.com/wp-content/uploads/Machaca-960x960.jpg.webp" alt=" Machaca" class="img-fluid grid-img">
+                    <h2>Machaca</h2>
+                    <p>Dried red meat such as beef or pork mixed with spicy peppers, tomato and onion.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://www.chefspencil.com/wp-content/uploads/Tacos-960x960.jpg.webp" alt="Tacos" class="img-fluid grid-img">
+                    <h2>Tacos</h2>
+                    <p>Taco fillings are beef steak, flank steak, chorizo, offal, “al pastor”, as well as hot and sweet marinated pork.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="https://www.chefspencil.com/wp-content/uploads/Burritos-960x960.jpg.webp" alt="Burritos" class="img-fluid grid-img">
+                    <h2>Burritos</h2>
+                    <p>A burrito is a cylindrically rolled flour tortilla stuffed with different ingredients of choice, often a stew.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://www.chefspencil.com/wp-content/uploads/Actor-Sunset-Hill-12-960x960.jpg.webp" alt=" Discada" class="img-fluid grid-img">
+                    <h2>Discada</h2>
+                    <p>Discada is popular northern Mexican dish that is a carnival for carnivores: sausages, chorizo, ground meat, ham, bacon, and lard – all these go in a good discada. </p>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://www.chefspencil.com/wp-content/uploads/Huevos-Rancheros-960x960.jpg.webp" alt="Huevos Rancheros" class="img-fluid grid-img">
+                    <h2>Huevos Rancheros</h2>
+                    <p> It´s made with two fried corn tortillas, topped with fried beans, and two sunny side up eggs all bathed in red hot sauce and decorated with coriander and freshly ground black pepper. Simply delicious!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="https://www.chefspencil.com/wp-content/uploads/Quesadilla-1.jpg.webp" alt="Quesadilla " class="img-fluid grid-img">
+                    <h2>Quesadilla</h2>
+                    <p>Blue corn quesadilla, filled with Cochinita Pibil and, of course, cheese. </p>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://www.chefspencil.com/wp-content/uploads/Actor-Sunset-Hill-13-960x960.jpg.webp" alt=" Menudo" class="img-fluid grid-img">
+                    <h2>Menudo</h2>
+                    <p>Menudo is a seasoned soup made with hominy (dried corn kernels), onions, oregano and chilies, and of course, beef tripe.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://www.chefspencil.com/wp-content/uploads/Cochinita-Pibil-960x960.jpg.webp" alt="Cochinita Pibil" class="img-fluid grid-img">
+                    <h2>Cochinita Pibil</h2>
+                    <p>The pork meat is marinated in achiote, orange juice, onion, and vinegar, then cooked wrapped in banana leaves.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br>
+
+    <section id="about">
+        <div class="container bg-warning">
+            <br>
+            <h2>About Us</h2>
+            <p>The Pizza Restaurant was founded in blabla by Mr. Italiano in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p><strong>The Chef?</strong> Mr. Italiano himself</p>
+            <p>We are proud of our interiors.</p>
+            <br>
+        </div>
+
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact">
+        <div class="container mt-5 bg-dark text-light">
+        <br>
+            <h2>Contact Us</h2>
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="name">Your Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="email">Your Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <br>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center mt-5">
+        <p>&copy; 2024 Ming's Diner. All rights reserved.</p>
+    </footer>
+
+    <!-- Add Bootstrap JS (popper.js and Bootstrap JS) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
